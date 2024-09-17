@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Template</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: hsla(207, 39%, 45%, 0.808);
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .heading{
+            color: rgb(109, 70, 183);
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+            background-color: #ac9dd5; /* Red background color */
+        }
+        .content {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        ul {
+            list-style-type: disc;
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="heading">{{dynamic_heading}}</h1>
+            <p>At our counseling center, we are here to support you on your journey to mental well-being. We provide a safe and confidential environment for you to discuss your concerns and challenges.</p>
+            <p>Your personalized report is as follows: </p>
+            <h3>{{dynamic_paragraph}}</h3>
+            <p>Contact us today to schedule an appointment and take the first step towards a healthier mind and a happier life.</p>
+        </div>
+    </div>
+</body>
+</html>
